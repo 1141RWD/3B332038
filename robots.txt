@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /templates/
+Disallow: /src/
+Disallow: /vendor/
+Disallow: /documentation/
+Disallow: /images/avatar/
+
+Sitemap: https://coffeehost.net/sitemap.xml
