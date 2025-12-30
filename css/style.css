@@ -12480,14 +12480,17 @@ i.bg-color-secondary {
 
 .show-on-scroll{
   opacity: 0;
+  pointer-events: none;
 }
 
 .show-on-scroll.show{
   opacity: 1;
+  pointer-events: auto;
 }
 
 .show-on-scroll.hide{
   opacity: 0;
+  pointer-events: none;
 }
 
 
