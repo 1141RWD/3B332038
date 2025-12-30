@@ -10,37 +10,37 @@ document.addEventListener('DOMContentLoaded', function () {
         'small_survival': {
             name: '小型生存服 / 簡易插件服',
             plans: {
-                '1-3': { ram: '4 GiB', series: 'value', seriesName: '臺灣超值主機' },
-                '4-6': { ram: '6 GiB', series: 'value', seriesName: '臺灣超值主機' },
-                '7-10': { ram: '8 GiB', series: 'value', seriesName: '臺灣超值主機' },
-                '11-16': { ram: '10 GiB', series: 'value', seriesName: '臺灣超值主機' },
-                '17+': { ram: '12 GiB', series: 'value', seriesName: '臺灣超值主機' }
+                '1-5': { ram: '4 GiB', series: 'value', seriesName: '臺灣超值主機' },
+                '6-10': { ram: '6 GiB', series: 'value', seriesName: '臺灣超值主機' },
+                '11-15': { ram: '8 GiB', series: 'value', seriesName: '臺灣超值主機' },
+                '16-20': { ram: '10 GiB', series: 'value', seriesName: '臺灣超值主機' },
+                '21+': { ram: '12 GiB', series: 'value', seriesName: '臺灣超值主機' }
             }
         },
         'large_survival': {
             name: '大型生存服 / 小型模組包',
             plans: {
-                '1-3': { ram: '6 GiB', series: 'performance', seriesName: '臺灣性能主機' },
-                '4-6': { ram: '8 GiB', series: 'performance', seriesName: '臺灣性能主機' },
-                '7-10': { ram: '10 GiB', series: 'performance', seriesName: '臺灣性能主機' },
-                '11-16': { ram: '12 GiB', series: 'performance', seriesName: '臺灣性能主機' },
-                '17+': { ram: '14 GiB', series: 'performance', seriesName: '臺灣性能主機' }
+                '1-5': { ram: '6 GiB', series: 'performance', seriesName: '臺灣性能主機' },
+                '6-10': { ram: '9 GiB', series: 'performance', seriesName: '臺灣性能主機' },
+                '11-15': { ram: '12 GiB', series: 'performance', seriesName: '臺灣性能主機' },
+                '16-20': { ram: '15 GiB', series: 'performance', seriesName: '臺灣性能主機' },
+                '21+': { ram: '18 GiB', series: 'performance', seriesName: '臺灣性能主機' }
             }
         },
         'large_mods': {
             name: '大型模組包 / 大陸整合包',
             plans: {
-                '1-3': { ram: '8 GiB', series: 'high', seriesName: '臺灣高效主機' },
-                '4-6': { ram: '10 GiB', series: 'high', seriesName: '臺灣高效主機' },
-                '7-10': { ram: '12 GiB', series: 'high', seriesName: '臺灣高效主機' },
-                '11-16': { ram: '16 GiB', series: 'high', seriesName: '臺灣高效主機' },
-                '17+': { ram: '18 GiB', series: 'high', seriesName: '臺灣高效主機' }
+                '1-5': { ram: '8 GiB', series: 'high', seriesName: '臺灣高效主機' },
+                '6-10': { ram: '12 GiB', series: 'high', seriesName: '臺灣高效主機' },
+                '11-15': { ram: '16 GiB', series: 'high', seriesName: '臺灣高效主機' },
+                '16-20': { ram: '20 GiB', series: 'high', seriesName: '臺灣高效主機' },
+                '21+': { ram: '24 GiB', series: 'high', seriesName: '臺灣高效主機' }
             }
         },
         'extreme': {
             name: '效能不足夠 / 需求較龐大',
             plans: {
-                'default': { ram: '20+ GiB', series: 'extreme', seriesName: '臺灣極致主機' }
+                'default': { ram: '25+ GiB', series: 'extreme', seriesName: '臺灣極致主機' }
             }
         }
     };
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if(typeSelect && playersSelect) {
         // Force Defaults on Load
         typeSelect.value = 'small_survival';
-        playersSelect.value = '7-10';
+        playersSelect.value = '6-10';
 
         typeSelect.addEventListener('change', updateRecommendation);
         playersSelect.addEventListener('change', updateRecommendation);
